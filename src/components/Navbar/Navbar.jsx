@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
@@ -13,9 +13,6 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
             <div className='nav-container'>
-                <div className='brand'>
-                    <h1>Abdullah Ahmad</h1>
-                </div>
                 <div className='menu-icon' onClick={toggleMenu}>
                     <FontAwesomeIcon icon={faBars} style={{ color: 'white' }} />
                 </div>
